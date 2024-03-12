@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Arama Uygulaması</title>
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!-- Internal CSS -->
+        <style>
+            .dark-mode{
+                background-color: black;
+                color: white;
+            }
+        </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h1 class="text-center text-danger fw-bold">Resim Arama Uygulaması</h1>
+        <button id="toggleBtn" class="btn btn-warning float-end">Dark-mode</button>
+        <form class="text-center">
+            <input id="searchInput" type="text" placeholder="Aramak istediğiniz şeyi giriniz..." class="form-control w-50 m-auto mb-3">
+            <button id="searchBtn" class="btn btn-outline-primary fw-bold" type="submit">Ara</button>
+            <button id="clearBtn" class="btn btn-outline-danger fw-bold" type="button">Temizle</button>
+            <select>
+                <option selected disabled>Filtrele</option>
+                <option>Artan</option>
+                <option>Azalan</option>
+            </select>
+        </form>
+        <p id="bilgiMesaj"></p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Bootstrap JS CDN -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+                <!-- EXternal JS -->
+                <script src="script.js"></script>
+    
+</body>
+</html>
